@@ -7,13 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5562063023CFD276004FD35E /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562062F23CFD276004FD35E /* Patterns.swift */; };
 		55CABBEA23CE460D00B864BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CABBE923CE460D00B864BA /* AppDelegate.swift */; };
 		55CABBEC23CE460D00B864BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CABBEB23CE460D00B864BA /* ViewController.swift */; };
 		55CABBEE23CE461000B864BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CABBED23CE461000B864BA /* Assets.xcassets */; };
 		55CABBF123CE461000B864BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CABBEF23CE461000B864BA /* Main.storyboard */; };
+		55CABC0023CE46C700B864BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CABBFF23CE46C700B864BA /* Cocoa.framework */; };
+		55CABC0323CE46C700B864BA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CABC0223CE46C700B864BA /* SourceEditorExtension.swift */; };
+		55CABC0523CE46C700B864BA /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CABC0423CE46C700B864BA /* SourceEditorCommand.swift */; };
+		55CABC0A23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55CABBFD23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55CABC0823CE46C700B864BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CABBDE23CE460D00B864BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CABBFC23CE46C700B864BA;
+			remoteInfo = "RSMThemeFont Migration Helper Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55CABC0E23CE46C700B864BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55CABC0A23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5562062F23CFD276004FD35E /* Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patterns.swift; sourceTree = "<group>"; };
 		55CABBE623CE460D00B864BA /* RSMThemeFont Migration Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSMThemeFont Migration Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CABBE923CE460D00B864BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CABBEB23CE460D00B864BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +51,12 @@
 		55CABBF023CE461000B864BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55CABBF223CE461000B864BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CABBF323CE461000B864BA /* RSMThemeFont_Migration_Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RSMThemeFont_Migration_Helper.entitlements; sourceTree = "<group>"; };
+		55CABBFD23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RSMThemeFont Migration Helper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CABBFF23CE46C700B864BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		55CABC0223CE46C700B864BA /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		55CABC0423CE46C700B864BA /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		55CABC0623CE46C700B864BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CABC0723CE46C700B864BA /* RSMThemeFont_Migration_Helper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RSMThemeFont_Migration_Helper_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55CABBFA23CE46C700B864BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CABC0023CE46C700B864BA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				55CABBE823CE460D00B864BA /* RSMThemeFont Migration Helper */,
+				55CABC0123CE46C700B864BA /* RSMThemeFont Migration Helper Extension */,
+				55CABBFE23CE46C700B864BA /* Frameworks */,
 				55CABBE723CE460D00B864BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				55CABBE623CE460D00B864BA /* RSMThemeFont Migration Helper.app */,
+				55CABBFD23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +110,26 @@
 			path = "RSMThemeFont Migration Helper";
 			sourceTree = "<group>";
 		};
+		55CABBFE23CE46C700B864BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55CABBFF23CE46C700B864BA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55CABC0123CE46C700B864BA /* RSMThemeFont Migration Helper Extension */ = {
+			isa = PBXGroup;
+			children = (
+				55CABC0223CE46C700B864BA /* SourceEditorExtension.swift */,
+				55CABC0423CE46C700B864BA /* SourceEditorCommand.swift */,
+				5562062F23CFD276004FD35E /* Patterns.swift */,
+				55CABC0623CE46C700B864BA /* Info.plist */,
+				55CABC0723CE46C700B864BA /* RSMThemeFont_Migration_Helper_Extension.entitlements */,
+			);
+			path = "RSMThemeFont Migration Helper Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +140,34 @@
 				55CABBE223CE460D00B864BA /* Sources */,
 				55CABBE323CE460D00B864BA /* Frameworks */,
 				55CABBE423CE460D00B864BA /* Resources */,
+				55CABC0E23CE46C700B864BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55CABC0923CE46C700B864BA /* PBXTargetDependency */,
 			);
 			name = "RSMThemeFont Migration Helper";
 			productName = "RSMThemeFont Migration Helper";
 			productReference = 55CABBE623CE460D00B864BA /* RSMThemeFont Migration Helper.app */;
 			productType = "com.apple.product-type.application";
+		};
+		55CABBFC23CE46C700B864BA /* RSMThemeFont Migration Helper Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55CABC0B23CE46C700B864BA /* Build configuration list for PBXNativeTarget "RSMThemeFont Migration Helper Extension" */;
+			buildPhases = (
+				55CABBF923CE46C700B864BA /* Sources */,
+				55CABBFA23CE46C700B864BA /* Frameworks */,
+				55CABBFB23CE46C700B864BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSMThemeFont Migration Helper Extension";
+			productName = "RSMThemeFont Migration Helper Extension";
+			productReference = 55CABBFD23CE46C700B864BA /* RSMThemeFont Migration Helper Extension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +180,9 @@
 				ORGANIZATIONNAME = Readdle;
 				TargetAttributes = {
 					55CABBE523CE460D00B864BA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					55CABBFC23CE46C700B864BA = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -112,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				55CABBE523CE460D00B864BA /* RSMThemeFont Migration Helper */,
+				55CABBFC23CE46C700B864BA /* RSMThemeFont Migration Helper Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +213,13 @@
 			files = (
 				55CABBEE23CE461000B864BA /* Assets.xcassets in Resources */,
 				55CABBF123CE461000B864BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CABBFB23CE46C700B864BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +235,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55CABBF923CE46C700B864BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CABC0323CE46C700B864BA /* SourceEditorExtension.swift in Sources */,
+				55CABC0523CE46C700B864BA /* SourceEditorCommand.swift in Sources */,
+				5562063023CFD276004FD35E /* Patterns.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55CABC0923CE46C700B864BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55CABBFC23CE46C700B864BA /* RSMThemeFont Migration Helper Extension */;
+			targetProxy = 55CABC0823CE46C700B864BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55CABBEF23CE461000B864BA /* Main.storyboard */ = {
@@ -268,6 +383,7 @@
 		55CABBF723CE461000B864BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RSMThemeFont Migration Helper/RSMThemeFont_Migration_Helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +404,7 @@
 		55CABBF823CE461000B864BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RSMThemeFont Migration Helper/RSMThemeFont_Migration_Helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +418,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.readdle.RSMThemeFont-Migration-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		55CABC0C23CE46C700B864BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RSMThemeFont Migration Helper Extension/RSMThemeFont_Migration_Helper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 869HSEDS8L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "RSMThemeFont Migration Helper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.readdle.RSMThemeFont-Migration-Helper.RSMThemeFont-Migration-Helper-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55CABC0D23CE46C700B864BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RSMThemeFont Migration Helper Extension/RSMThemeFont_Migration_Helper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 869HSEDS8L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "RSMThemeFont Migration Helper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.readdle.RSMThemeFont-Migration-Helper.RSMThemeFont-Migration-Helper-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,6 +481,15 @@
 			buildConfigurations = (
 				55CABBF723CE461000B864BA /* Debug */,
 				55CABBF823CE461000B864BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55CABC0B23CE46C700B864BA /* Build configuration list for PBXNativeTarget "RSMThemeFont Migration Helper Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CABC0C23CE46C700B864BA /* Debug */,
+				55CABC0D23CE46C700B864BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
